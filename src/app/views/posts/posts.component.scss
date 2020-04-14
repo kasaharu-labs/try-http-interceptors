@@ -6,5 +6,16 @@
 .title {
   height: 30px;
   font-size: 24px;
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 2px #ddd;
+  margin-bottom: 12px;
+}
+
+.post {
+  border: solid 1px #ccc;
+  padding: 12px 24px;
+  margin-bottom: 4px;
+}
+
+.post__title {
+  font-weight: bold;
 }

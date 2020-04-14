@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { PostService } from '../../applications/post.service';
 
 @Component({
   selector: 'app-posts',
@@ -7,7 +8,10 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PostsComponent implements OnInit {
-  constructor() {}
+  constructor(private postService: PostService) {}
+  readonly posts$ = this.postService.post$;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.postService.fetch();
+  }
 }

@@ -1,1 +1,8 @@
 <h2 class="title">Post 一覧</h2>
+
+<ng-container *ngIf="posts$ | async as posts">
+  <div class="post" *ngFor="let post of posts">
+    <div class="post__title">{{ post.title }}</div>
+    <div>{{ post.body }}</div>
+  </div>
+</ng-container>
