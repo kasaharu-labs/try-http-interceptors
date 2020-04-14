@@ -1,4 +1,4 @@
-# NgBasis
+# try-http-interceptors
 
 ![](https://github.com/kasaharu/try-http-interceptors/workflows/Node%20CI/badge.svg)
 
